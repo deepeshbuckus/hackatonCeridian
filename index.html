@@ -132,10 +132,28 @@
                                                                 class="mb-0 list-group-item text-uppercase font-weight-bold ">
                                                                 Favorites
                                                             </p>
+                                                            <div id="div1" class="dropTarget" ondrop="drop(event)"
+                                                                ondragover="allowDrop(event)" style="min-height: 40px;">
+                                                            </div>
 
+                                                            <div id="div2" class="dropTarget" ondrop="drop(event)"
+                                                                ondragover="allowDrop(event)" style="min-height: 40px;">
+                                                            </div>
+                                                            <div id="div3" class="dropTarget" ondrop="drop(event)"
+                                                                ondragover="allowDrop(event)" style="min-height: 40px;">
+                                                            </div>
+                                                            <div id="div4" class="dropTarget" ondrop="drop(event)"
+                                                                ondragover="allowDrop(event)" style="min-height: 40px;">
+                                                            </div>
+                                                            <div id="div5" class="dropTarget" ondrop="drop(event)"
+                                                                ondragover="allowDrop(event)" style="min-height: 40px;">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <!-- <div class="col-md-6 col-lg-2">
+                                                </div>
+
+
+                                                <!-- <div class="col-md-6 col-lg-2">
                                                         <div class="list-group list-group-flush t7"></div>
                                                     </div>
                                                     <div class="col-md-6 col-lg-2">
@@ -148,25 +166,26 @@
                                                         <div class="list-group list-group-flush t9">
                                                         </div>
                                                     </div> -->
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                        <!-- Left links -->
                     </div>
-                    <!-- Collapsible wrapper -->
+                    </li>
+                    </ul>
+                    <!-- Left links -->
                 </div>
-                <!-- Container wrapper -->
+                <!-- Collapsible wrapper -->
                 <p style="text-align:right;">
                     <img style="padding:0.3%;" src="headnavright.png" />
                 </p>
-            </nav>
-
-
         </div>
+        <!-- Container wrapper -->
+
+        </nav>
+
+
+    </div>
 
 
 
@@ -191,6 +210,27 @@
     <script src="parentMenu.js">
     </script>
     <script src="https://kit.fontawesome.com/a8e74d0bc8.js" crossorigin="anonymous"></script>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            console.log("Draggin!");
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            var nodeCopy = document.getElementById(data).cloneNode(true);
+            nodeCopy.id = ev.target.id + "c";
+            nodeCopy.style.borderRight = "none";
+            nodeCopy.style.borderLeft = "none";
+            nodeCopy.style.borderTop = "none";
+            ev.target.appendChild(nodeCopy);
+        }
+    </script>
 
 </body>
 

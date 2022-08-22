@@ -22,6 +22,15 @@
     object-fit: cover;
 }
 
+.droptarget {
+    min-height: 40px;
+    /* background-color: #17f702; */
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    /* border: 1px solid #aaaaaa; */
+}
+
 .list-group {
     padding: 8%;
 }
