@@ -1,329 +1,355 @@
 let parentMenus =
     [
         {
-            menu: "Analytics",
-            child:
-                [],
+            "menu": "Analytics",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Anomaly Days",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Attendance Management",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Benefits",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Benefits Administration",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Benefits Intelligence",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Benefits Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Career Profile Configuration",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Careers",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Centralized Schedules",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Compensation",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Compensation Administration",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Compensation Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Data & Analytics",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Data Export Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Documents",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Earnings",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Employee Timesheet",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Engagement",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Engagement Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Getting Started",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "HCM Anywhere",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Home",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "HR Admin",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Learning",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Learning Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Letter Management",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Manager Timesheet",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Market Pricing",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Mobile Org Schedules",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Multi-Week Calendar",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Onboarding",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Onboarding Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Operation View",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Org Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Pay Admin Checklist",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Pay Approve Checklist",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Pay Setup",
+            Child: [
+                "Minimum Wages",
+                "Clock Devices",
+                "Clock Device Group",
+                "Tips",
+                "Pay Holidays",
+                "Holiday Types",
+                "Pay Category",
+                "Pay Code",
+                "Pay Category Group",
+                "Holiday Group",
+                "Attendance",
+                "Pay Code Group",
+                "Multi-Approval",
+                "Balances",
+                "Base Rate Set",
+                "Entitlements",
+                "Job Rate",
+                "Pay Group",
+                "Pay Policy",
+                "Punch Policy",
+                "Long Service Leave",
+                "Period Authorization Policy",
+                "Time Review Administration"
+            ]
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Payroll",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Payroll Import",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Payroll Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Pension Auto-Enrollment",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Performance",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Performance Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Period Review",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Plan",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Plan Admin Checklist",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Plan Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "PPACA",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Profile",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Projects",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Punch Auditing",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Rating Scale",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Recruiting",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Recruiting Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Reward History Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Schedule Setup",
+            Child: [
+                "Job Assignment Activities",
+                "Expression Token",
+                "Shift Trading Policy",
+                "Employee Order",
+                "Day Part",
+                "Activities",
+                "School Year",
+                "Schedule Rule Policy",
+                "Staff Assignment Policy",
+                "Assignment Policy",
+                "Autofill Run Profiles",
+                "Coverage Pane Setup",
+                "Employee Preferred Day Part",
+                "Employee Activities Rank Ordering",
+                "Event Administration",
+                "Event Properties",
+                "Operational Templates",
+                "Sales Statistics",
+                "Schedule Order",
+                "Skill Display",
+                "Schedule Change Policy",
+                "Work Contract Premium Policy"
+            ]
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Schedules",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Scheduling Plan",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Site Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Succession",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Succession Setup",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "System Admin",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Task Checklist",
+            Child: []
         },
         {
-            menu: "Anomaly Days",
-            child:
-                [],
+            "menu": "Task Management",
+            Child: []
+        },
+        {
+            "menu": "Task Planning Calendar",
+            Child: []
+        },
+        {
+            "menu": "Task Setup",
+            Child: []
+        },
+        {
+            "menu": "Team Learning Activity",
+            Child: []
+        },
+        {
+            "menu": "Time Away From Work",
+            Child: []
+        },
+        {
+            "menu": "Time Review",
+            Child: []
+        },
+        {
+            "menu": "Timesheets",
+            Child: []
+        },
+        {
+            "menu": "Vacation Bidding",
+            Child: []
+        },
+        {
+            "menu": "Vacation Bidding Setup",
+            Child: []
+        },
+        {
+            "menu": "Work",
+            Child: []
+        },
+        {
+            "menu": "Workflow Administration",
+            Child: []
+        },
+        {
+            "menu": "Year End",
+            Child: []
         }
     ];
 
@@ -339,30 +365,94 @@ $(document).ready(function () {
     let menuArr3 = [];
     let menuArr4 = [];
     let menuArr5 = [];
-    let menuArr6 = [];
-    let menuArr7 = [];
-    let menuArr8 = [];
-    let menuArr9 = [];
+
+    let str1 = "<div class=\"dropdownAnchor\"> ";
+
+    let str4 = "<div class=\"dropdown-content\">";
+
+    let str2 = "<a href=\"#\">Link 1</a>" +
+        "<a href=\"#\">Link 2</a>" +
+        "<a href=\"#\">Link 3</a>";
+
+    let str3 = "</div>" +
+        "</div>";
+
     $.each(parentMenus, function (i, val) {
-        console.log(i);
-        if (i <= 8)
-            menuArr1.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 9 && i <= 17)
-            menuArr2.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 18 && i <= 26)
-            menuArr3.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 27 && i <= 35)
-            menuArr4.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 36 && i <= 44)
-            menuArr5.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 45 && i <= 53)
-            menuArr6.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 54 && i <= 62)
-            menuArr7.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 63 && i <= 71)
-            menuArr8.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
-        if (i >= 72 && i <= 80)
-            menuArr9.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
+
+        if (i <= 14) {
+
+            if (val.Child.length != 0) {
+                let final_str = str1 + "<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>" + str4;
+                $.each(val.Child, function (j, valc) {
+                    final_str = final_str + "<a href=\"#\">" + valc + "</a>";
+                });
+                final_str = final_str + str3;
+                menuArr1.push(final_str);
+            }
+            else {
+                menuArr1.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
+            }
+        }
+
+        if (i >= 15 && i <= 29) {
+            if (val.Child.length != 0) {
+                let final_str = str1 + "<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>" + str4;
+                $.each(val.Child, function (j, valc) {
+                    final_str = final_str + "<a href=\"#\">" + valc + "</a>";
+                });
+                final_str = final_str + str3;
+                menuArr2.push(final_str);
+            }
+            else {
+                menuArr2.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
+            }
+        }
+
+
+        if (i >= 30 && i <= 44) {
+            if (val.Child.length != 0) {
+                let final_str = str1 + "<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>" + str4;
+                $.each(val.Child, function (j, valc) {
+                    final_str = final_str + "<a href=\"#\">" + valc + "</a>";
+                });
+                final_str = final_str + str3;
+                menuArr3.push(final_str);
+            }
+            else {
+                menuArr3.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
+            }
+
+        }
+
+        if (i >= 45 && i <= 59) {
+            if (val.Child.length != 0) {
+                let final_str = str1 + "<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>" + str4;
+                $.each(val.Child, function (j, valc) {
+                    final_str = final_str + "<a href=\"#\">" + valc + "</a>";
+                });
+                final_str = final_str + str3;
+                menuArr4.push(final_str);
+            }
+            else {
+                menuArr4.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
+            }
+        }
+
+
+        if (i >= 60 && i <= 75) {
+            if (val.Child.length != 0) {
+                let final_str = str1 + "<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>" + str4;
+                $.each(val.Child, function (j, valc) {
+                    final_str = final_str + "<a href=\"#\">" + valc + "</a>";
+                });
+                final_str = final_str + str3;
+                menuArr5.push(final_str);
+            }
+            else {
+                menuArr5.push("<a href=\"\" class=\"list-group-item list-group-item-action\">" + val.menu + "</a>");
+            }
+        }
+
     });
 
     $.each(menuArr1, function (i, val) {
@@ -384,22 +474,5 @@ $(document).ready(function () {
     $.each(menuArr5, function (i, val) {
         console.log(val);
         $(".t5").append(val);
-    });
-
-    $.each(menuArr6, function (i, val) {
-        console.log(val);
-        $(".t6").append(val);
-    });
-    $.each(menuArr7, function (i, val) {
-        console.log(val);
-        $(".t7").append(val);
-    });
-    $.each(menuArr8, function (i, val) {
-        console.log(val);
-        $(".t8").append(val);
-    });
-    $.each(menuArr9, function (i, val) {
-        console.log(val);
-        $(".t9").append(val);
     });
 });
