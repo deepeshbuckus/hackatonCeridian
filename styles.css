@@ -6,6 +6,10 @@
     box-shadow: 5px 5px 8px grey;
 }
 
+.container {
+    margin: 0%;
+}
+
 .subnav {
     background-image: linear-gradient(to right, #2886ca, #024198);
     background-color: #0977c6;
