@@ -6,6 +6,16 @@
     box-shadow: 5px 5px 8px grey;
 }
 
+.profftext {
+    text-align: left;
+}
+
+.proffilepic {
+    color: #3067db;
+    font-weight: bold;
+    text-align: left;
+}
+
 .menuholder {
     padding: 1%;
 }
@@ -127,4 +137,31 @@ body {
 
 .dropdownAnchor:hover .dropdown-content {
     display: block;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

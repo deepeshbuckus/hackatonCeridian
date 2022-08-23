@@ -152,6 +152,35 @@ let parentMenus =
         },
         {
             id: 15,
+            "menu": "Pay Setup",
+            Child: [
+                "Minimum Wages",
+                "Clock Devices",
+                "Clock Device Group",
+                "Tips",
+                "Pay Holidays",
+                "Holiday Types",
+                "Pay Category",
+                "Pay Code",
+                "Pay Category Group",
+                "Holiday Group",
+                "Attendance",
+                "Pay Code Group",
+                "Multi-Approval",
+                "Balances",
+                "Base Rate Set",
+                "Entitlements",
+                "Job Rate",
+                "Pay Group",
+                "Pay Policy",
+                "Punch Policy",
+                "Long Service Leave",
+                "Period Authorization Policy",
+                "Time Review Administration"
+            ]
+        },
+        {
+            id: 15,
             "menu": "Multi-Week Calendar",
             Child: []
         },
@@ -185,35 +214,7 @@ let parentMenus =
             "menu": "Pay Approve Checklist",
             Child: []
         },
-        {
-            id: 15,
-            "menu": "Pay Setup",
-            Child: [
-                "Minimum Wages",
-                "Clock Devices",
-                "Clock Device Group",
-                "Tips",
-                "Pay Holidays",
-                "Holiday Types",
-                "Pay Category",
-                "Pay Code",
-                "Pay Category Group",
-                "Holiday Group",
-                "Attendance",
-                "Pay Code Group",
-                "Multi-Approval",
-                "Balances",
-                "Base Rate Set",
-                "Entitlements",
-                "Job Rate",
-                "Pay Group",
-                "Pay Policy",
-                "Punch Policy",
-                "Long Service Leave",
-                "Period Authorization Policy",
-                "Time Review Administration"
-            ]
-        },
+
         {
             id: 15,
             "menu": "Payroll",
@@ -248,6 +249,34 @@ let parentMenus =
             id: 15,
             "menu": "Period Review",
             Child: []
+        },
+        {
+            id: 15,
+            "menu": "Schedule Setup",
+            Child: [
+                "Job Assignment Activities",
+                "Expression Token",
+                "Shift Trading Policy",
+                "Employee Order",
+                "Day Part",
+                "Activities",
+                "School Year",
+                "Schedule Rule Policy",
+                "Staff Assignment Policy",
+                "Assignment Policy",
+                "Autofill Run Profiles",
+                "Coverage Pane Setup",
+                "Employee Preferred Day Part",
+                "Employee Activities Rank Ordering",
+                "Event Administration",
+                "Event Properties",
+                "Operational Templates",
+                "Sales Statistics",
+                "Schedule Order",
+                "Skill Display",
+                "Schedule Change Policy",
+                "Work Contract Premium Policy"
+            ]
         },
         {
             id: 15,
@@ -304,34 +333,7 @@ let parentMenus =
             "menu": "Reward History Setup",
             Child: []
         },
-        {
-            id: 15,
-            "menu": "Schedule Setup",
-            Child: [
-                "Job Assignment Activities",
-                "Expression Token",
-                "Shift Trading Policy",
-                "Employee Order",
-                "Day Part",
-                "Activities",
-                "School Year",
-                "Schedule Rule Policy",
-                "Staff Assignment Policy",
-                "Assignment Policy",
-                "Autofill Run Profiles",
-                "Coverage Pane Setup",
-                "Employee Preferred Day Part",
-                "Employee Activities Rank Ordering",
-                "Event Administration",
-                "Event Properties",
-                "Operational Templates",
-                "Sales Statistics",
-                "Schedule Order",
-                "Skill Display",
-                "Schedule Change Policy",
-                "Work Contract Premium Policy"
-            ]
-        },
+
         {
             id: 15,
             "menu": "Schedules",
@@ -458,7 +460,7 @@ $(document).ready(function () {
         if (i <= 14) {
 
             if (val.Child.length != 0) {
-                let final_str = str1 + "<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>" + str4;
+                let final_str = str1 + "<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\"><i class=\"fas fa-caret-right pe-2\"></i>" + val.menu + "</a>" + str4;
                 $.each(val.Child, function (j, valc) {
                     final_str = final_str + "<a href=\"#\">" + valc + "</a>";
                 });
@@ -466,13 +468,13 @@ $(document).ready(function () {
                 menuArr1.push(final_str);
             }
             else {
-                menuArr1.push("<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
+                menuArr1.push("<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
             }
         }
 
         if (i >= 15 && i <= 29) {
             if (val.Child.length != 0) {
-                let final_str = str1 + "<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>" + str4;
+                let final_str = str1 + "<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\"><i class=\"fas fa-caret-right pe-2\"></i>" + val.menu + "</a>" + str4;
                 $.each(val.Child, function (j, valc) {
                     final_str = final_str + "<a href=\"#\">" + valc + "</a>";
                 });
@@ -480,14 +482,21 @@ $(document).ready(function () {
                 menuArr2.push(final_str);
             }
             else {
-                menuArr2.push("<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
+                if (val.menu == "Home") {
+                    menuArr2.push("<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"index.html\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
+
+                }
+                else {
+                    menuArr2.push("<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"" + i + 1 + ".html\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
+
+                }
             }
         }
 
 
         if (i >= 30 && i <= 44) {
             if (val.Child.length != 0) {
-                let final_str = str1 + "<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>" + str4;
+                let final_str = str1 + "<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\"><i class=\"fas fa-caret-right pe-2\"></i>" + val.menu + "</a>" + str4;
                 $.each(val.Child, function (j, valc) {
                     final_str = final_str + "<a href=\"#\">" + valc + "</a>";
                 });
@@ -495,29 +504,36 @@ $(document).ready(function () {
                 menuArr3.push(final_str);
             }
             else {
-                menuArr3.push("<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
+                menuArr3.push("<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
             }
 
         }
 
         if (i >= 45 && i <= 59) {
             if (val.Child.length != 0) {
-                let final_str = str1 + "<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>" + str4;
+                let final_str = str1 + "<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\"><i class=\"fas fa-caret-right pe-2\"></i>" + val.menu + "</a>" + str4;
                 $.each(val.Child, function (j, valc) {
-                    final_str = final_str + "<a href=\"#\">" + valc + "</a>";
+                    if (valc == "Schedule Rule Policy") {
+                        final_str = final_str + "<a href=\"schedulerulepolicy.html\">" + valc + "</a>";
+                    }
+                    else {
+                        final_str = final_str + "<a href=\"#\">" + valc + "</a>";
+                    }
+
                 });
                 final_str = final_str + str3;
                 menuArr4.push(final_str);
             }
             else {
-                menuArr4.push("<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
+                // data-toggle="tooltip" data-placement="top" title="The Employee Timesheet feature allows users to quickly record, view, and edit the times that they have worked throughout the week."
+                menuArr4.push("<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
             }
         }
 
 
         if (i >= 60 && i <= 75) {
             if (val.Child.length != 0) {
-                let final_str = str1 + "<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>" + str4;
+                let final_str = str1 + "<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\"><i class=\"fas fa-caret-right pe-2\"></i>" + val.menu + "</a>" + str4;
                 $.each(val.Child, function (j, valc) {
                     final_str = final_str + "<a href=\"#\">" + valc + "</a>";
                 });
@@ -525,7 +541,12 @@ $(document).ready(function () {
                 menuArr5.push(final_str);
             }
             else {
-                menuArr5.push("<a id=\"" + i + 1 + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
+                if (val.menu == "Timesheets") {
+                    menuArr5.push("<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"The Employee Timesheet feature allows users to quickly record, view, and edit the times that they have worked throughout the week.\">" + val.menu + "</a>");
+
+                }
+                else
+                    menuArr5.push("<a id=\"" + parseInt(i) + parseInt(1) + "\" href=\"\" class=\"list-group-item list-group-item-action\" draggable=\"true\" ondragstart=\"drag(event)\">" + val.menu + "</a>");
             }
         }
 
