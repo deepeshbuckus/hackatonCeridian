@@ -162,21 +162,7 @@ let parentMenus =
             "Holiday Types",
             "Pay Category",
             "Pay Code",
-            "Pay Category Group",
-            "Holiday Group",
-            "Attendance",
-            "Pay Code Group",
-            "Multi-Approval",
-            "Balances",
-            "Base Rate Set",
-            "Entitlements",
-            "Job Rate",
-            "Pay Group",
-            "Pay Policy",
-            "Punch Policy",
-            "Long Service Leave",
-            "Period Authorization Policy",
-            "Time Review Administration"
+            "Pay Category Group"
         ]
     },
     {
@@ -262,20 +248,7 @@ let parentMenus =
             "Activities",
             "School Year",
             "Schedule Rule Policy",
-            "Staff Assignment Policy",
-            "Assignment Policy",
-            "Autofill Run Profiles",
-            "Coverage Pane Setup",
-            "Employee Preferred Day Part",
-            "Employee Activities Rank Ordering",
-            "Event Administration",
-            "Event Properties",
-            "Operational Templates",
-            "Sales Statistics",
-            "Schedule Order",
-            "Skill Display",
-            "Schedule Change Policy",
-            "Work Contract Premium Policy"
+            "Staff Assignment Policy"
         ]
     },
     {
